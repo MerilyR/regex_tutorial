@@ -38,16 +38,18 @@ public class RegexTestHarness {
             }
             boolean found = false;
             while (matcher.find()) {
-                console.format("I found the text" +
+                /*console.format("I found the text" +
                     " \"%s\" starting at " +
                     "index %d and ending at index %d.%n",
                     matcher.group(),
                     matcher.start(),
-                    matcher.end());
+                    matcher.end());*/
+            	console.format("Input string matches the regex :)");
                 found = true;
             }
             if(!found){
-                console.format("No match found.%n");
+                //console.format("No match found.%n");
+            	console.format ("Input string doesn't match !?!");
             }
         }
     }
